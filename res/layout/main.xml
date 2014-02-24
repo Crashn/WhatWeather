@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CityTableRow">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="Город"
+                    android:id="@+id/CityTextView"
+                    android:layout_span="3"
+                    android:layout_gravity="center"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/DayTableRow">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mon.10 Feb"
+                    android:id="@+id/DayTextView"
+                    android:layout_gravity="center"
+                    android:layout_span="3"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/HumidityTableRow"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hum. 95%"
+                    android:id="@+id/HumidityTextView"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/WeatherImageView"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cloudy_icon_128"
+                    android:layout_weight="1"
+                    android:minHeight="132dp"
+                    android:minWidth="132dp"
+                    android:maxHeight="132dp"
+                    android:maxWidth="132dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/W 3-5 m/s"
+                    android:id="@+id/WindTextView"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/PressTableRow">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="755 мм.рт.с"
+                    android:id="@+id/PressTextView"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/FallsTableRow">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Без осадков"
+                    android:id="@+id/FallsTextView"
+                    android:layout_gravity="center"
+                    android:layout_span="3"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/DayTempRow">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-23C"
+                    android:id="@+id/MorningTempTextView"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-17C"
+                    android:layout_gravity="center"
+                    android:id="@+id/DayTempTextView"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-18C"
+                    android:id="@+id/EveTempTextView"
+                    android:layout_gravity="center"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/NextDayTableRow"
+                android:minHeight="30dp">
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:background="#1733ff">
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/NextDayDate"
+                android:background="#030303"
+                android:layout_margin="1dp">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11Feb ,Th"
+                    android:id="@+id/NextDayTextView1"
+                    android:layout_gravity="center"
+                    android:layout_span="2"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12 Feb. Wen"
+                    android:id="@+id/NextDayTextView2"
+                    android:layout_gravity="center"
+                    android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/NextDayIco">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/NextDayImageView1"
+                    android:layout_span="2"
+                    android:layout_margin="1dp"
+                    android:background="#010101"
+                    android:src="@drawable/snow_32"
+                    android:visibility="visible"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/NextDayImageView2"
+                    android:src="@drawable/cloudy_partly_icon_32"
+                    android:layout_span="2"
+                    android:layout_margin="1dp"
+                    android:background="#010101"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/NextDayTemp"
+                android:layout_margin="1dp"
+                android:background="#010101"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-23C"
+                    android:id="@+id/NextDayTempMornTextView1"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15dp"
+                    android:layout_margin="1dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-17C"
+                    android:id="@+id/NextDayTempEvTextView1"
+                    android:paddingRight="15dp"
+                    android:layout_margin="1dp"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-25C"
+                    android:id="@+id/NextDayTempMornTextView2"
+                    android:paddingLeft="15dp"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-28C"
+                    android:id="@+id/NextDayTempEvTextView2"
+                    android:paddingRight="15dp"
+                    android:layout_gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
+

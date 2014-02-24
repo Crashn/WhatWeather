@@ -1,0 +1,74 @@
+<weather created="rp5.ru" date="2014-2-10">
+    <point id="6036">
+        <point_id>6036</point_id>
+        <region_id>77</region_id>
+        <country_id>3</country_id>
+        <point_name>Новосибирск</point_name>
+        <point_name_trim>Новосибирск</point_name_trim>
+        <point_name2>в Новосибирске</point_name2>
+        <point_timestamp>1392050273</point_timestamp>
+        <gmt_add>7</gmt_add>
+        <point_date>Mon, 10 Feb 2014 16:37:53 +0700</point_date>
+        <point_date_time>2014-2-10 16:37</point_date_time>
+        <timestep>
+            <time_step>12</time_step>
+            <datetime>2014-2-10 19:00</datetime>
+            <G>19</G>
+            <HHii>19:00</HHii>
+            <cloud_cover>73</cloud_cover>
+            <precipitation>0.0</precipitation>
+            <pressure>765</pressure>
+            <temperature>-15</temperature>
+            <humidity>81</humidity>
+            <wind_direction>С-З</wind_direction>
+            <wind_velocity>2</wind_velocity>
+            <falls>0</falls>
+            <drops>0</drops>
+        </timestep>
+        <timestep>
+            <time_step>24</time_step>
+            <datetime>2014-2-11 07:00</datetime>
+            <G>7</G>
+            <HHii>07:00</HHii>
+            <cloud_cover>81</cloud_cover>
+            <precipitation>0.0</precipitation>
+            <pressure>765</pressure>
+            <temperature>-23</temperature>
+            <humidity>86</humidity>
+            <wind_direction>З</wind_direction>
+            <wind_velocity>1</wind_velocity>
+            <falls>0</falls>
+            <drops>0</drops>
+        </timestep>
+        <timestep>
+            <time_step>36</time_step>
+            <datetime>2014-2-11 19:00</datetime>
+            <G>19</G>
+            <HHii>19:00</HHii>
+            <cloud_cover>72</cloud_cover>
+            <precipitation>0.0</precipitation>
+            <pressure>765</pressure>
+            <temperature>-17</temperature>
+            <humidity>73</humidity>
+            <wind_direction>С</wind_direction>
+            <wind_velocity>2</wind_velocity>
+            <falls>0</falls>
+            <drops>0</drops>
+        </timestep>
+        <timestep>
+            <time_step>48</time_step>
+            <datetime>2014-2-12 07:00</datetime>
+            <G>7</G>
+            <HHii>07:00</HHii>
+            <cloud_cover>69</cloud_cover>
+            <precipitation>0.0</precipitation>
+            <pressure>764</pressure>
+            <temperature>-25</temperature>
+            <humidity>73</humidity>
+            <wind_direction>С-З</wind_direction>
+            <wind_velocity>1</wind_velocity>
+            <falls>0</falls>
+            <drops>0</drops>
+        </timestep>
+    </point>
+</weather>

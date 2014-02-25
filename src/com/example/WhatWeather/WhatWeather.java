@@ -55,7 +55,7 @@ public class WhatWeather extends Activity implements ViewWeatherInterface, Obser
 
         model = new WeatherModel();
         model.addObserver(this);
-        model.collectData();
+        model.collectData();  //TODO: вывести в отдельный поток, не выполнять в граф потоке!
     }
 
     /**
@@ -78,6 +78,7 @@ public class WhatWeather extends Activity implements ViewWeatherInterface, Obser
          static final String DROPS = "drops"; //0  ?
          static final String END = "point";
          */
+
 
        if(model instanceof WeatherModel){
            Log.d("WHAT_WEATHER","********Fill allDaysForecast");

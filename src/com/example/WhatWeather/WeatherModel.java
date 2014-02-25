@@ -92,6 +92,13 @@ public class WeatherModel implements ModelWeatherInterface {
 
     }
 
+    /**
+     *
+     * @param date - timestamp from xml
+     * @return 1- if today is day of timestamp, 2 - tomorrow, 3 - day after tomorrow, 4 - something going wrong
+     * @throws ParseException
+     */
+
     private int whatDate(String date) throws ParseException {
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy-M-dd");

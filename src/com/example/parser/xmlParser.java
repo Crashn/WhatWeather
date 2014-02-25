@@ -1,4 +1,4 @@
-package parser;
+package com.example.parser;
 
 import com.example.WhatWeather.WeatherDay;
 

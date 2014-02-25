@@ -1,4 +1,4 @@
-package parser;
+package com.example.parser;
 
 import android.util.Xml;
 import com.example.WhatWeather.WeatherDay;
@@ -27,7 +27,7 @@ public class XmlPullWeatherParser extends BaseWeatherParser {
             boolean done = false;
 
             while (eventType != XmlPullParser.END_DOCUMENT && !done){
-                String name = null;
+                String name ;
 
                 switch (eventType){
                     case XmlPullParser.START_DOCUMENT:
@@ -62,13 +62,13 @@ public class XmlPullWeatherParser extends BaseWeatherParser {
                                 currentDay.setWindDirection(parser.nextText());
                             }
                             else if(name.equalsIgnoreCase(WIND_VELOCITY)){
-                                currentDay.setWindVelocity(Integer.parseInt( parser.nextText()));
+                                currentDay.setWindVelocity(Double.parseDouble( parser.nextText()));
                             }
                             else if(name.equalsIgnoreCase(FALLS)){
-                                currentDay.setFalls(Integer.parseInt( parser.nextText()));
+                                currentDay.setFalls(Double.parseDouble( parser.nextText()));
                             }
                             else if(name.equalsIgnoreCase(DROPS)){
-                                currentDay.setDrops(Integer.parseInt( parser.nextText()));
+                                currentDay.setDrops(Double.parseDouble( parser.nextText()));
                             }
                         }
                         break;
@@ -88,5 +88,27 @@ public class XmlPullWeatherParser extends BaseWeatherParser {
             throw new RuntimeException(e);
         }
         return weatherDays;
+    }
+    @Deprecated
+    private void convertDayStamp(String daystamp){
+
+        /**
+         * взять строку с временем, вытащить год/месяц/день, отбросив время. установить в значение 19:00
+         * время 19 можно взять из переменной
+         * месяц день год присвоить переменной каждого итема
+         *
+         * если значение месяц день = сегодня - заполнть значение тудей
+         * если сегодня +1 = след день
+         * если сегодня +2 = послезавтра
+         *
+         * Внимание вопрос, стоит ли хранить поля для 3х значений, или решать этот вопрос во время отображения?
+         * Отвечает А.Друзь:...
+         *
+         * List <WeatherDay> allData;
+         * List <WeatherDay> tomorrowDayData;
+         * List <WeatherDay> afterTomorrowDayData;
+         */
+
+
     }
 }

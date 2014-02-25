@@ -9,12 +9,12 @@ public class WeatherDay {
     private int humidity;
     private int pressure;
     private String windDirection;
-    private int windVelocity;
+    private double windVelocity;
     private double temp;
     private int cloudCover;
     private int time;     //G in xml
-    private int falls;
-    private int drops;
+    private double falls;
+    private double drops;
 
 
 
@@ -58,11 +58,11 @@ public class WeatherDay {
         this.windDirection = windDirection;
     }
 
-    public int getWindVelocity() {
+    public double getWindVelocity() {
         return windVelocity;
     }
 
-    public void setWindVelocity(int windVelocity) {
+    public void setWindVelocity(double windVelocity) {
         this.windVelocity = windVelocity;
     }
 
@@ -90,19 +90,19 @@ public class WeatherDay {
         this.time = time;
     }
 
-    public int getFalls() {
+    public double getFalls() {
         return falls;
     }
 
-    public void setFalls(int falls) {
+    public void setFalls(double falls) {
         this.falls = falls;
     }
 
-    public int getDrops() {
+    public double getDrops() {
         return drops;
     }
 
-    public void setDrops(int drops) {
+    public void setDrops(double drops) {
         this.drops = drops;
     }
 }
